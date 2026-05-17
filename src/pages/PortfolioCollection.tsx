@@ -4,6 +4,7 @@ import SEO from "@/components/SEO";
 import { JsonLd, breadcrumbSchema, creativeWorkSchema } from "@/components/JsonLd";
 import FadeInOnScroll from "@/components/animations/FadeInOnScroll";
 import RevealText from "@/components/animations/RevealText";
+import PicturePortfolio from "@/components/PicturePortfolio";
 import { useLang } from "@/i18n/useLang";
 import { getCollectionBySlug, getImageUrls, PORTFOLIO } from "@/data/portfolio";
 
@@ -98,7 +99,7 @@ export default function PortfolioCollection() {
       {/* Cover */}
       <FadeInOnScroll className="container-wide mb-16 md:mb-24">
         <div className="overflow-hidden bg-muted aspect-[16/10] rounded-sm">
-          <img
+          <PicturePortfolio
             src={collection.cover}
             alt={collection[lang].title}
             width={2000}
@@ -168,7 +169,7 @@ export default function PortfolioCollection() {
                 className={isFull ? "md:col-span-2" : ""}
               >
                 <div className="overflow-hidden bg-muted aspect-[4/3] rounded-sm">
-                  <img
+                  <PicturePortfolio
                     src={src}
                     alt={`${collection[lang].title} - ${i + 1}`}
                     width={1600}

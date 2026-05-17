@@ -5,6 +5,7 @@ import { JsonLd, breadcrumbSchema } from "@/components/JsonLd";
 import FadeInOnScroll from "@/components/animations/FadeInOnScroll";
 import RevealText from "@/components/animations/RevealText";
 import HoverLift from "@/components/animations/HoverLift";
+import PicturePortfolio from "@/components/PicturePortfolio";
 import { useLang } from "@/i18n/useLang";
 import { PORTFOLIO } from "@/data/portfolio";
 
@@ -73,7 +74,7 @@ export default function PortfolioIndex() {
  <FadeInOnScroll key={c.slug} delay={i * 0.06}>
  <HoverLift href={href} className="group block">
  <div className="overflow-hidden bg-muted aspect-[4/3] mb-5 rounded-sm">
- <img
+ <PicturePortfolio
  src={c.cover}
  alt={c[lang].title}
  width={1600}
@@ -123,7 +124,7 @@ export default function PortfolioIndex() {
  <FadeInOnScroll key={c.slug} delay={i * 0.05}>
  <HoverLift href={href} className="group block">
  <div className="overflow-hidden bg-muted aspect-square mb-4 rounded-sm">
- <img
+ <PicturePortfolio
  src={c.cover}
  alt={c[lang].title}
  width={800}

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useId, useState, type ReactElement, type InputHTMLAttributes, type TextareaHTMLAttributes, cloneElement } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -169,7 +169,7 @@ export default function Contact() {
                 href="https://www.linkedin.com/in/gatisdaugavietis/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 rounded-full border border-border hover:border-primary hover:text-primary transition-colors"
+                className="inline-flex items-center justify-center min-w-[44px] min-h-[44px] rounded-full border border-border hover:border-primary hover:text-primary transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin size={18} />
@@ -178,7 +178,7 @@ export default function Contact() {
                 href="https://www.instagram.com/gatisdesign/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 rounded-full border border-border hover:border-primary hover:text-primary transition-colors"
+                className="inline-flex items-center justify-center min-w-[44px] min-h-[44px] rounded-full border border-border hover:border-primary hover:text-primary transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram size={18} />
@@ -277,17 +277,33 @@ export default function Contact() {
 interface FieldProps {
   label: string;
   error?: string;
-  children: React.ReactNode;
+  children: ReactElement<
+    InputHTMLAttributes<HTMLInputElement> | TextareaHTMLAttributes<HTMLTextAreaElement>
+  >;
 }
 
 function Field({ label, error, children }: FieldProps) {
+  const id = useId();
+  const errorId = `${id}-error`;
+  const child = cloneElement(children, {
+    id,
+    "aria-invalid": error ? true : undefined,
+    "aria-describedby": error ? errorId : undefined,
+  });
   return (
     <div>
-      <label className="block text-xs font-mono uppercase tracking-widest text-muted-foreground mb-1">
+      <label
+        htmlFor={id}
+        className="block text-xs font-mono uppercase tracking-widest text-muted-foreground mb-1"
+      >
         {label}
       </label>
-      {children}
-      {error && <p className="mt-1 text-xs text-destructive">{error}</p>}
+      {child}
+      {error && (
+        <p id={errorId} className="mt-1 text-xs text-destructive">
+          {error}
+        </p>
+      )}
     </div>
   );
 }

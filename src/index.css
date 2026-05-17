@@ -1,3 +1,7 @@
+/* Self-hosted variable fonts (replace Google Fonts double-load) */
+@import "@fontsource-variable/fraunces/opsz.css";
+@import "@fontsource-variable/inter/index.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

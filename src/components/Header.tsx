@@ -49,7 +49,7 @@ export default function Header() {
       <div className="container-wide flex h-16 items-center justify-between md:h-20">
         <Link
           to={`${pathPrefix}/`}
-          className="font-display text-lg md:text-xl font-semibold tracking-tight"
+          className="font-display text-lg md:text-xl font-semibold tracking-tight inline-flex items-center min-h-[44px] py-2"
           aria-label="Gatis Daugavietis"
         >
           Gatis<span className="text-primary">.</span>Daugavietis
@@ -84,12 +84,12 @@ export default function Header() {
 
         <button
           type="button"
-          className="md:hidden p-2 -mr-2"
+          className="md:hidden inline-flex items-center justify-center min-w-[44px] min-h-[44px] -mr-2"
           onClick={() => setOpen((v) => !v)}
           aria-label={open ? "Aizvērt navigāciju" : "Atvērt navigāciju"}
           aria-expanded={open}
         >
-          {open ? <X size={22} /> : <Menu size={22} />}
+          {open ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 

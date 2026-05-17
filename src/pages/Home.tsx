@@ -8,6 +8,7 @@ import CountUp from "@/components/animations/CountUp";
 import HoverLift from "@/components/animations/HoverLift";
 import Marquee from "@/components/animations/Marquee";
 import MagneticButton from "@/components/animations/MagneticButton";
+import PicturePortfolio from "@/components/PicturePortfolio";
 import { useLang } from "@/i18n/useLang";
 import { getFeatured } from "@/data/portfolio";
 import { TOP_CLIENTS } from "@/data/clients";
@@ -137,7 +138,7 @@ export default function Home() {
               >
                 <HoverLift href={href} className="group block">
                   <div className="overflow-hidden bg-muted aspect-[4/3] mb-5 rounded-sm">
-                    <img
+                    <PicturePortfolio
                       src={c.cover}
                       alt={c[lang].title}
                       width={1600}
