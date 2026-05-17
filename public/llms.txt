@@ -1,6 +1,6 @@
 # Gatis Daugavietis
 
-> Latvian designer and web developer with 18 years of experience. Brand identity, web design and print for companies that want to grow — not just look good.
+> Latvian designer and web developer with 18 years of experience. Brand identity, web design and print for companies that want to grow - not just look good.
 
 ## Who
 
@@ -13,19 +13,19 @@
 
 ## Services
 
-- Brand identity — logo, color system, typography, visual language, brand book
-- Web design and development — Vite + React + TypeScript + Tailwind, Vercel deploy
-- Print design — posters, brochures, business cards, packaging
-- Design and SEO consulting — audits with prioritized recommendations
+- Brand identity - logo, color system, typography, visual language, brand book
+- Web design and development - Vite + React + TypeScript + Tailwind, Vercel deploy
+- Print design - posters, brochures, business cards, packaging
+- Design and SEO consulting - audits with prioritized recommendations
 
 ## Selected clients
 
-- Tenter — Latvian construction company (largest portfolio)
-- Estire — service company, brand and Vercel migration
-- ROIS — performance marketing agency
-- Box Latvia — packaging brand identity
-- Apmeklē.lv — Latvian tourism platform identity
-- Digitālais Dzintars — cultural digitization brand
+- Tenter - Latvian construction company (largest portfolio)
+- Estire - service company, brand and Vercel migration
+- ROIS - performance marketing agency
+- Box Latvia - packaging brand identity
+- Apmeklē.lv - Latvian tourism platform identity
+- Digitālais Dzintars - cultural digitization brand
 - MLM Cargo, Tavasdurvis, ARM Metals
 
 ## Contact

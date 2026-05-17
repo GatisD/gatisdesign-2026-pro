@@ -107,7 +107,7 @@ export default function Contact() {
           {/* Contact info */}
           <FadeInOnScroll className="md:col-span-5">
             <h2 className="font-display text-sm uppercase tracking-widest text-muted-foreground mb-6">
-              {lang === "lv" ? "Tieši pie manis" : "Reach me directly"}
+              {lang === "lv" ? "Tiešie kontakti" : "Reach me directly"}
             </h2>
             <ul className="space-y-5">
               <li>
@@ -155,7 +155,7 @@ export default function Contact() {
                 />
                 <div>
                   <span className="block text-xs font-mono uppercase tracking-widest text-muted-foreground">
-                    {lang === "lv" ? "Atrašanās" : "Location"}
+                    {lang === "lv" ? "Atrašanās vieta" : "Location"}
                   </span>
                   <span className="block text-lg font-medium">
                     Rīga, {lang === "lv" ? "Latvija" : "Latvia"}
@@ -253,7 +253,7 @@ export default function Contact() {
                 {errors.consent && (
                   <p className="text-xs text-destructive">
                     {lang === "lv"
-                      ? "Lūdzu, piekrīti privātuma politikai"
+                      ? "Piekrītiet privātuma politikai"
                       : "Please agree to the privacy policy"}
                   </p>
                 )}

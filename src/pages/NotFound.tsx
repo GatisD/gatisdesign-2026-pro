@@ -20,7 +20,7 @@ export default function NotFound() {
         </h1>
         <p className="mt-8 text-xl text-muted-foreground max-w-md mx-auto">
           {lang === "lv"
-            ? "Iespējams, link vairs nedarbojas. Atgriežamies sākumā?"
+            ? "Iespējams, saite vairs nedarbojas. Atgriežamies sākumā?"
             : "The link may no longer work. Back to the homepage?"}
         </p>
         <Link
