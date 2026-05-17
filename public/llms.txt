@@ -1,0 +1,55 @@
+# Gatis Daugavietis
+
+> Latvian designer and web developer with 18 years of experience. Brand identity, web design and print for companies that want to grow — not just look good.
+
+## Who
+
+- Name: Gatis Daugavietis
+- Role: Designer & web developer, performance marketing lead
+- Experience: 18 years (since 2008)
+- Based in: Rīga, Latvia
+- Languages: Latvian (native), Russian, English
+- Clients in: Latvia, Lithuania, Estonia, US (Honolulu)
+
+## Services
+
+- Brand identity — logo, color system, typography, visual language, brand book
+- Web design and development — Vite + React + TypeScript + Tailwind, Vercel deploy
+- Print design — posters, brochures, business cards, packaging
+- Design and SEO consulting — audits with prioritized recommendations
+
+## Selected clients
+
+- Tenter — Latvian construction company (largest portfolio)
+- Estire — service company, brand and Vercel migration
+- ROIS — performance marketing agency
+- Box Latvia — packaging brand identity
+- Apmeklē.lv — Latvian tourism platform identity
+- Digitālais Dzintars — cultural digitization brand
+- MLM Cargo, Tavasdurvis, ARM Metals
+
+## Contact
+
+- Email: gatis@rois.lv
+- Phone: +371 27112163
+- LinkedIn: https://www.linkedin.com/in/gatisdaugavietis/
+- Instagram: https://www.instagram.com/gatisdesign/
+
+## Approach
+
+I ask about the business before I draw. Audience, why people aren't buying right now, where the resistance is. Design only after answers are on paper. It takes time, results are always more specific.
+
+## Tech stack
+
+- Web: Vite, React, TypeScript, Tailwind, react-helmet-async, vite-react-ssg, Vercel
+- Print: Adobe Illustrator, InDesign, Photoshop
+- SEO: GA4, Google Search Console, Microsoft Clarity
+- Marketing: Meta Ads, Google Ads
+
+## Pages
+
+- Home: https://gatisdesign.com/
+- About: https://gatisdesign.com/par-mani (LV), https://gatisdesign.com/en/about (EN)
+- Services: https://gatisdesign.com/pakalpojumi (LV), https://gatisdesign.com/en/services (EN)
+- Portfolio: https://gatisdesign.com/portfolio (LV), https://gatisdesign.com/en/portfolio (EN)
+- Contact: https://gatisdesign.com/kontakti (LV), https://gatisdesign.com/en/contact (EN)

@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Approved palette - WCAG AA verified */
+    --bg: 36 36% 94%;            /* #F5F1EB cream */
+    --fg: 30 17% 9%;             /* #1A1814 near-black */
+    --primary: 16 64% 44%;       /* #B85429 burnt terracotta */
+    --primary-foreground: 36 36% 94%; /* cream on primary */
+    --accent: 118 25% 23%;       /* #2D4A2B forest green */
+    --accent-foreground: 36 36% 94%;
+    --muted: 36 30% 87%;         /* #E8E0D4 */
+    --muted-foreground: 33 14% 32%; /* #5C5448 */
+    --border: 35 21% 77%;        /* #D4C8B5 */
+    --card: 36 36% 94%;
+    --card-foreground: 30 17% 9%;
+    --popover: 36 36% 94%;
+    --popover-foreground: 30 17% 9%;
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 36 36% 94%;
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-bg text-fg font-sans;
+    font-feature-settings: "ss01", "cv11";
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display tracking-tight;
+  }
+
+  ::selection {
+    background-color: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+  }
+
+  /* Focus rings - keyboard only */
+  :focus-visible {
+    outline: 2px solid hsl(var(--primary));
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  /* A11y - reduced motion default */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  .container-tight {
+    @apply mx-auto w-full max-w-5xl px-6;
+  }
+
+  .container-wide {
+    @apply mx-auto w-full max-w-7xl px-6;
+  }
+
+  .grain {
+    position: relative;
+  }
+
+  .grain::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.04;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+}
